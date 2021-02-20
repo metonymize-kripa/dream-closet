@@ -9,10 +9,16 @@
 
 const posts = [
   {
-    title: 'How can I get involved?',
-    slug: 'how-can-i-get-involved',
+    title: 'What is the dream closet?',
+    slug: 'dream-closet',
     html: `
-			<p><strong> Sign up for the <a href='https://oracled.mailchimpsites.com/'> DailySpread</a></strong></p>
+			<p> - We have a "vanilla" closet to start
+<br>- Based on what the customer looked at, you get the closet getting filled in with #, $ value, brand, color, use case
+<br>- As customers enter more info, the closet gets filled differently
+<br>- In an evolved state, they can remove things from the closet, replace it... add things to it from other websites
+<br>- It also becomes an idea generator over time
+<br>- It also serves as an inventory of what you have
+<br>- You could create plugins with Poshmark if you wanted to sell something </strong></p>
 		`
   }
 ];
