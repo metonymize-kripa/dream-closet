@@ -6,11 +6,6 @@
 	let div;
 	let autoscroll;
 	
-	onMount(async function() {
-        const response = await fetch(apiURL);
-        data = await response.json();
-    	});
-
 	beforeUpdate(() => {
 		autoscroll = div && (div.offsetHeight + div.scrollTop) > (div.scrollHeight - 20);
 	});
