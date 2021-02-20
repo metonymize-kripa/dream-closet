@@ -42,7 +42,7 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
-			const reply = text + _.sample('👞🥾👖🩳🧐');
+			const reply = text + _.sample(['👞','🥾,','👖','🩳','🧐']);
 
 			setTimeout(() => {
 				comments = comments.concat({
