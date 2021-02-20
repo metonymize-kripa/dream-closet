@@ -21,6 +21,7 @@
     "svelte": "^3.0.0",
     "svelte-loader": "^2.9.0",
     "webpack": "^4.7.0",
-    "elizabot":"^0.0.3"
+    "elizabot":"^0.0.3",
+    "underscore":"^1.12.0"
   }
 }
