@@ -1,9 +1,7 @@
 <script>
 	import Eliza from 'elizabot';
 	import { beforeUpdate, afterUpdate } from 'svelte';
-	import { onMount } from "svelte";
-	const apiURL = "https://serpapi.com/search?q=coffee";
-	let data = [];
+	let closet = '👕 👔 🎽👟';
 	
 	let div;
 	let autoscroll;
@@ -23,7 +21,8 @@
 
 	const eliza = new Eliza();
 	
-	let comments = [{ author: 'eliza', text: eliza.getInitial() }];
+	//let comments = [{ author: 'eliza', text: eliza.getInitial() }];
+	let comments = [{ author: 'eliza', text: closet}];
 	
 	function runAPI(query) {
 		/*
@@ -46,7 +45,8 @@
 
 			event.target.value = '';
 
-			const reply = eliza.transform(text);
+			//const reply = eliza.transform(text);
+			const reply = text + _.sample('👞🥾👖🩳🧐');
 
 			setTimeout(() => {
 				comments = comments.concat({
