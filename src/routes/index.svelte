@@ -1,7 +1,7 @@
 <script>
 	import Eliza from 'elizabot';
 	import { beforeUpdate, afterUpdate } from 'svelte';
-	import underscore;
+	import _ from 'underscore';
 	let closet = '👕 👔 🎽👟';
 	
 	let div;
