@@ -18,16 +18,7 @@
 	const eliza = new Eliza();
 	
 	//let comments = [{ author: 'eliza', text: eliza.getInitial() }];
-	let comments = [{ author: 'eliza', text: closet}];
-	
-	function runAPI(query) {
-		/*
-		fetch("https://serpapi.com/search?q=coffee"+query)
-			.then(d => d.text())
-			.then(d => (data = JSON.parse(d)));
-		*/
-		return 'time for '+query
-	}
+	let comments = [{ author: 'Dream Closet', text: closet}];
 
 	function handleKeydown(event) {
 		if (event.key === 'Enter') {
@@ -42,7 +33,10 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
-			const reply = closet + _.sample(['👞','🥾','👖','🩳','🧐'],_.sample([0,1,2]));
+			if (text === 'empty') {
+				closet = '';
+			}
+			closet = closet + _.sample(['👞','🥾','👖','🩳','🧐'],_.sample([1,2,3]));
 
 			setTimeout(() => {
 				comments = comments.concat({
@@ -53,8 +47,9 @@
 
 				setTimeout(() => {
 					comments = comments.filter(comment => !comment.placeholder).concat({
-						author: 'eliza',
-						text: reply
+						author: 'Dream Closet',
+						//text: reply
+						text: closet
 					});
 				}, 500 + Math.random() * 500);
 			}, 200 + Math.random() * 200);
@@ -103,7 +98,9 @@
 </style>
 
 <div class="chat">
-	<h1>BET: Basic Eliza Test</h1>
+	<h1>UI Sketch for Dream Closet</h1>
+	
+		<p>Type empty to restart, anything else to add.</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
