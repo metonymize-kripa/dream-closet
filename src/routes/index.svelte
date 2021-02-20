@@ -2,7 +2,7 @@
 	import Eliza from 'elizabot';
 	import { beforeUpdate, afterUpdate } from 'svelte';
 	import _ from 'underscore';
-	let closet = '👕 👔 🎽👟';
+	let closet = '👕,👔,🎽,👟|';
 	
 	let div;
 	let autoscroll;
