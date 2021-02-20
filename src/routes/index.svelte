@@ -33,10 +33,10 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
+			closet = closet + _.sample(['👞','🥾','👖','🩳','🧐'],_.sample([1,2,3]))+'|';
 			if (text === 'empty') {
-				closet = '';
+				closet = '|';
 			}
-			closet = closet + _.sample(['👞','🥾','👖','🩳','🧐'],_.sample([1,2,3]));
 
 			setTimeout(() => {
 				comments = comments.concat({
