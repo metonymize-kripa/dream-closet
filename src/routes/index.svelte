@@ -98,7 +98,7 @@
 </style>
 
 <div class="chat">
-	<h1>UI Sketch for Dream Closet</h1>
+	<h1>Kripa and Ankor brainstorming sketch for Dream Closet</h1>
 	
 		<p>Type empty to restart, anything else to add.</p>
 
