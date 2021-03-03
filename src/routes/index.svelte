@@ -73,7 +73,7 @@
 
 	article {
 		margin: 0.5em 0;
-		font-size: large;
+		font-size:larger;
 	}
 
 	.user {
@@ -88,6 +88,7 @@
 	.amoire span {
 		background-color: #eee;
 		border-radius: 1em 1em 1em 0;
+		font-size:larger;
 	}
 
 	.user span {
