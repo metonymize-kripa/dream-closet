@@ -15,8 +15,7 @@
 		if (autoscroll) div.scrollTo(0, div.scrollHeight);
 	});
 
-	const eliza = new Eliza();
-	
+	//const eliza = new Eliza();
 	//let comments = [{ author: 'eliza', text: eliza.getInitial() }];
 	let comments = [{ author: 'amoire', text: closet}];
 
@@ -70,7 +69,6 @@
 		border-top: 1px solid #eee;
 		margin: 0 0 0.5em 0;
 		overflow-y: auto;
-		font-size: large;
 	}
 
 	article {
@@ -89,6 +87,7 @@
 	.amoire span {
 		background-color: #eee;
 		border-radius: 1em 1em 1em 0;
+		font-size: large;
 	}
 
 	.user span {
