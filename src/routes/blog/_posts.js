@@ -9,8 +9,8 @@
 
 const posts = [
   {
-    title: 'What is the dream closet?',
-    slug: 'dream-closet',
+    title: 'What is Amoire Club?',
+    slug: 'amoire-club',
     html: `
 			<p> - We have a "vanilla" closet to start
 <br>- Based on what the customer looked at, you get the closet getting filled in with #, $ value, brand, color, use case
