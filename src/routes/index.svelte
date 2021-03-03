@@ -22,7 +22,7 @@
 	function handleKeydown(event) {
 		if (event.key === 'Enter') {
 			const text = event.target.value;
-			if (!text) return;
+			return;
 			
 			if (closet.includes("🎉 🙌")) {
 				closet = ' '
@@ -58,7 +58,7 @@
 			}, 200 + Math.random() * 200);
 			
 			if (closet.includes('🎁')) {
-				closet = closet + "🎉 🙌 You found it!"
+				closet = closet + "... You found it! 🎉 🙌 "
 			}
 		}
 	}
