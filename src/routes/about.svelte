@@ -2,6 +2,6 @@
 	<title>About</title>
 </svelte:head>
 
-<h1>About 💎 Oracle</h1>
+<h1>About 🎁 Amoire Club</h1>
 
-<p>Who is the Oracle? What is the Matrix? The truth is, we no longer know.</p>
+<p>The future of bespoke.</p>
