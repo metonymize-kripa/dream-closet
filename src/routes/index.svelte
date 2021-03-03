@@ -22,7 +22,6 @@
 	function handleKeydown(event) {
 		if (event.key === 'Enter') {
 			const text = event.target.value;
-			return;
 			
 			if (closet.includes("🎉 🙌")) {
 				closet = ' '
