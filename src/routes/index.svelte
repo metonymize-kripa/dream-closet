@@ -73,6 +73,7 @@
 
 	article {
 		margin: 0.5em 0;
+		font-size: large;
 	}
 
 	.user {
@@ -87,7 +88,6 @@
 	.amoire span {
 		background-color: #eee;
 		border-radius: 1em 1em 1em 0;
-		font-size: large;
 	}
 
 	.user span {
@@ -100,7 +100,7 @@
 <div class="chat">
 	<h1>🎁 Amoire Club 💭</h1>
 	
-		<p>Empty to restart, anything else to play ...</p>
+		<p>Type "empty" to reset the armoire, anything else to play ...</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
