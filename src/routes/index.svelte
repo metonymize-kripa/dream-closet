@@ -24,8 +24,8 @@
 			const text = event.target.value;
 			if (!text) return;
 			
-			if closet.includes("🙌 🎉 🙌") {
-				closet = ''
+			if (closet.includes("🙌 🎉 🙌")) {
+				closet = ' '
 			}
 
 			comments = comments.concat({
@@ -36,12 +36,12 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
-			closet = closet + _.sample(['👞','🥾','👖','🩳','🎁'],_.sample([1,2,3]))+'|';
+			closet = closet + _.sample(['👞','🥾','👖','🩳','🎁'],_.sample([1,2,3]))+' ';
 			if ( text.toLowerCase() === 'empty' ) {
 				closet = ' ';
 			}
 			
-			if closet.includes('🎁') {
+			if (closet.includes('🎁')) {
 				closet = "🙌 🎉 🙌"
 			}
 
