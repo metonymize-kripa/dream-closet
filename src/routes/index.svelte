@@ -62,7 +62,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		width: 100%;
+		width: 90%;
 	}
 
 	.scrollable {
@@ -70,6 +70,7 @@
 		border-top: 1px solid #eee;
 		margin: 0 0 0.5em 0;
 		overflow-y: auto;
+		font-size: large;
 	}
 
 	article {
@@ -98,9 +99,9 @@
 </style>
 
 <div class="chat">
-	<h1>🎁 Brainstorming Amoire Club</h1>
+	<h1>🎁 Amoire Club 💭</h1>
 	
-		<p>Type empty to restart, anything else to play ...</p>
+		<p>Empty to restart, anything else to play ...</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
