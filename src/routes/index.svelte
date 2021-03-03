@@ -2,7 +2,7 @@
 	import Eliza from 'elizabot';
 	import { beforeUpdate, afterUpdate } from 'svelte';
 	import _ from 'underscore';
-	let closet = '👕,👔,🎽,👟 ';
+	let closet = '👕 👔 🎽 👟  ';
 	
 	let div;
 	let autoscroll;
@@ -24,7 +24,7 @@
 			const text = event.target.value;
 			if (!text) return;
 			
-			if (closet.includes("🙌 🎉 🙌")) {
+			if (closet.includes("🎉 🙌")) {
 				closet = ' '
 			}
 
@@ -36,15 +36,11 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
-			closet = closet + _.sample(['👞','🥾','👖','🩳','🎁'],_.sample([1,2,3]))+' ';
+			closet = closet + (_.sample(['👞','🥾','👖','🩳','🎁'],_.sample([1,2,3]))).join(' ')+' ';
 			if ( text.toLowerCase() === 'empty' ) {
 				closet = ' ';
 			}
 			
-			if (closet.includes('🎁')) {
-				closet = closet + "🙌 🎉 🙌"
-			}
-
 			setTimeout(() => {
 				comments = comments.concat({
 					author: 'amoire',
@@ -60,6 +56,10 @@
 					});
 				}, 500 + Math.random() * 500);
 			}, 200 + Math.random() * 200);
+			
+			if (closet.includes('🎁')) {
+				closet = closet + "🎉 🙌 You found it!"
+			}
 		}
 	}
 </script>
@@ -109,7 +109,7 @@
 <div class="chat">
 	<h1>🎁 Amoire Club 💭</h1>
 	
-		<p>Type "empty" to reset the armoire, anything else to play ...</p>
+		<p>Type "empty" to reset the armoire, enter ↩️ to play ...</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
