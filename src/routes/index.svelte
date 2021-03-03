@@ -18,7 +18,7 @@
 	const eliza = new Eliza();
 	
 	//let comments = [{ author: 'eliza', text: eliza.getInitial() }];
-	let comments = [{ author: 'Dream Closet', text: closet}];
+	let comments = [{ author: 'amoire', text: closet}];
 
 	function handleKeydown(event) {
 		if (event.key === 'Enter') {
@@ -40,14 +40,14 @@
 
 			setTimeout(() => {
 				comments = comments.concat({
-					author: 'eliza',
+					author: 'amoire',
 					text: '...',
 					placeholder: true
 				});
 
 				setTimeout(() => {
 					comments = comments.filter(comment => !comment.placeholder).concat({
-						author: 'Dream Closet',
+						author: 'amoire',
 						//text: reply
 						text: closet
 					});
@@ -86,7 +86,7 @@
 		display: inline-block;
 	}
 
-	.eliza span {
+	.amoire span {
 		background-color: #eee;
 		border-radius: 1em 1em 1em 0;
 	}
