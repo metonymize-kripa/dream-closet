@@ -33,7 +33,7 @@
 			event.target.value = '';
 
 			//const reply = eliza.transform(text);
-			closet = closet + _.sample(['👞','🥾','👖','🩳','🧐'],_.sample([1,2,3]))+'|';
+			closet = closet + _.sample(['👞','🥾','👖','🩳','🎁'],_.sample([1,2,3]))+'|';
 			if (text === 'empty') {
 				closet = '|';
 			}
@@ -98,9 +98,9 @@
 </style>
 
 <div class="chat">
-	<h1>Brainstorming sketch for Amoire Club</h1>
+	<h1>🎁 Brainstorming Amoire Club</h1>
 	
-		<p>Type empty to restart, anything else to play Amoire ...</p>
+		<p>Type empty to restart, anything else to play ...</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
