@@ -98,9 +98,9 @@
 </style>
 
 <div class="chat">
-	<h1>Brainstorming sketch for Dream Closet</h1>
+	<h1>Brainstorming sketch for Amoire Club</h1>
 	
-		<p>Type empty to restart, anything else to add.</p>
+		<p>Type empty to restart, anything else to play Amoire ...</p>
 
 	<div class="scrollable" bind:this={div}>
 		{#each comments as comment}
